@@ -6,6 +6,7 @@ import csv
 import json
 import re
 from collections import Counter
+from datetime import datetime, timezone
 from pathlib import Path
 
 from docx import Document
@@ -60,6 +61,14 @@ def mean_sd(row: dict, name: str) -> str:
 
 
 doc = Document()
+properties = doc.core_properties
+properties.title = "Residual Near Duplicate Content in Kazakh Language Datasets"
+properties.subject = "Assignment 4 experiment and results"
+properties.author = "Gapar Galym; Bekzat Rashiduly; Nuradilet Mustafa"
+properties.last_modified_by = "Gapar Galym"
+properties.comments = "Research report for group SE-2418"
+properties.created = datetime.now(timezone.utc)
+properties.modified = properties.created
 sec = doc.sections[0]
 sec.top_margin = Inches(.72)
 sec.bottom_margin = Inches(.68)

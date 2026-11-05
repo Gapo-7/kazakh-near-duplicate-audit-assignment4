@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+from datetime import datetime, timezone
 from pathlib import Path
 
 from docx import Document
@@ -22,6 +23,14 @@ if actual != record["appendix_sha256"]:
     raise SystemExit("The original Appendix A no longer matches the local freeze record")
 
 doc = Document(SOURCE)
+properties = doc.core_properties
+properties.title = "Assignment 4 Protocol Submission Copy"
+properties.subject = "Experimental protocol for group SE-2418"
+properties.author = AUTHORS
+properties.last_modified_by = "Gapar Galym"
+properties.comments = "Named copy of the frozen protocol"
+properties.created = datetime.now(timezone.utc)
+properties.modified = properties.created
 for style_name in ("Normal", "Title", "Subtitle", "Heading 1"):
     doc.styles[style_name].font.name = "Times New Roman"
 for paragraph in doc.paragraphs:

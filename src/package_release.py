@@ -19,6 +19,7 @@ INCLUDE = [
     ROOT / "protocol" / "deviations_log.md",
     ROOT / "protocol" / "manual_audit_codebook.md",
     ROOT / "protocol" / "Appendix_C_Reproduction_Test_Template.md",
+    ROOT / "protocol" / "Appendix_C_Reproduction_Record.md",
     ROOT / "report" / "Assignment4_Kazakh_Near_Duplicate_Results.docx",
     ROOT / "report" / "Assignment4_Individual_Defence_Notes.md",
     *sorted((ROOT / "results").glob("*.json")),

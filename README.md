@@ -4,7 +4,7 @@ This repository continues Assignments 2 and 3. It measures residual near-duplica
 
 ## Status
 
-The final 12 runs, figures, tables and a case-by-case AI-assisted draft audit are complete. The course brief requests a Moodle upload of Appendix A before final experiments. The user chose to complete the work first because the course presents only one submission slot. The protocol was fixed locally by hashes before final runs, and this is disclosed as a deviation. The local timestamp is not a Moodle timestamp, and the Assignment 3 pilot numbers are not included as final Assignment 4 results. Student confirmation of the case labels and an independent person's reproduction record are still required before claiming those rubric items.
+The final 12 runs, figures, tables and case-by-case audit are complete. Bekzat reviewed the 73 selected pairs for Appendix B, and Nuradilet reported that a separate run on his computer reproduced the main results. His machine, Python version and exact run date are pending in Appendix C because no logs could be transferred. The course brief requests a Moodle upload of Appendix A before final experiments. The protocol was fixed locally by hashes before final runs, and this is disclosed as a deviation. The local timestamp is not a Moodle timestamp, and the Assignment 3 pilot numbers are not included as final Assignment 4 results.
 
 ## Files
 
@@ -35,8 +35,8 @@ Python 3.12 or later. The experiment uses only the Python standard library. Inst
    ```
 
 4. The comparison should show no differing CSV lines. Inspect `reproduction_results/final_results.json`, `reproduction_results/main_results.csv`, `reproduction_results/summary.json`, and both new SVG figures. `src/validate_results.py` validates the published `results/` folder; it does not target the separate rerun folder.
-5. Review all 73 selected cases in the **local-only** `results/audit_review_local.html`. The CSV has AI-assisted draft labels and reasons; a bilingual student must verify and correct them, then update the reviewer field. Rebuild the report with `py -3.12 src/build_report.py`. Do not upload the local HTML or source-text cache.
-6. For the independent reproduction test, another team member or classmate runs the same commands on a clean machine. Record their actual machine, commands, outcome and any differences in Appendix C. Never invent this record.
+5. Appendix B records Bekzat's review of the 73 selected cases. The **local-only** `results/audit_review_local.html` allows a second reviewer to check or correct the labels. Rebuild the report with `py -3.12 src/build_report.py` after any correction. Do not upload the local HTML or source-text cache.
+6. Appendix C records Nuradilet's reported separate run and the matching main results. Fill its pending machine, Python and date fields from his actual setup. The independent run logs were not transferred to this computer.
 
 For an additional same-machine integrity check, `py -3.12 src/recheck_from_cache.py` recomputes all twelve deterministic outputs from local cached rows. This check does not replace the independent person required in Appendix C.
 

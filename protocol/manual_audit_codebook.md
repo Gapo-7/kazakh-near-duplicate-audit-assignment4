@@ -1,6 +1,6 @@
 # Manual audit codebook
 
-Use this codebook for the cases selected by `src/prepare_audit.py`. The reviewer must inspect the two full texts in `results/audit_review_local.html` and record a label, error type, reason and reviewer name in `results/Appendix_B_Audit_Cases.csv`. The local HTML contains source text and must not be uploaded. The supplied CSV currently holds AI-assisted draft judgments, identified in its `reviewer` column. A bilingual student must check every decision against the local full texts and replace that reviewer field with their own name only after doing so.
+Use this codebook for the cases selected by `src/prepare_audit.py`. The reviewer must inspect the two full texts in `results/audit_review_local.html` and record a label, error type, reason and reviewer name in `results/Appendix_B_Audit_Cases.csv`. The local HTML contains source text and must not be uploaded. Bekzat is recorded as the reviewer of the 73 selected pairs. A second bilingual reviewer can check any disputed decision against the local full texts.
 
 ## Labels
 

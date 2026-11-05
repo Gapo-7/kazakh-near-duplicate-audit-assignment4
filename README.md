@@ -4,11 +4,12 @@ This repository continues Assignments 2 and 3. It measures residual near-duplica
 
 ## Status
 
-The final 12 runs, figures, tables and case-by-case audit are complete. Bekzat reviewed the 73 selected pairs for Appendix B, and Nuradilet reported that a separate run on his computer reproduced the main results. His machine, Python version and exact run date are pending in Appendix C because no logs could be transferred. The course brief requests a Moodle upload of Appendix A before final experiments. The protocol was fixed locally by hashes before final runs, and this is disclosed as a deviation. The local timestamp is not a Moodle timestamp, and the Assignment 3 pilot numbers are not included as final Assignment 4 results.
+The final 12 runs, figures, tables and case-by-case audit are complete. Bekzat Rashiduly reviewed the 73 selected pairs for Appendix B, and Nuradilet Mustafa reported that a separate run on his computer reproduced the main results. His machine, Python version and exact run date are pending in Appendix C because no logs could be transferred. The course brief requests a Moodle upload of Appendix A before final experiments. The protocol was fixed locally by hashes before final runs, and this is disclosed as a deviation. The local timestamp is not a Moodle timestamp, and the Assignment 3 pilot numbers are not included as final Assignment 4 results.
 
 ## Files
 
-- `protocol/Assignment4_Appendix_A_Protocol_Freeze.docx`: the pre-experiment form.
+- `protocol/Assignment4_Appendix_A_Protocol_Freeze.docx`: the original pre-experiment form, unchanged since the local freeze.
+- `protocol/Assignment4_Appendix_A_Submission_Copy.docx`: the same decisions with student names added after the local freeze. The group was not supplied, and the missing pre-run Moodle timestamp is stated explicitly.
 - `config/frozen_protocol.json`: exact source revisions, sample block offsets, seeds, metrics and analysis plan.
 - `src/freeze_protocol.py`: deterministic construction of the selection manifest from Assignment 3 pilot metadata.
 - `src/run_experiment.py`: downloads public records, checks source revisions, runs all three conditions and writes raw result logs.
@@ -35,8 +36,8 @@ Python 3.12 or later. The experiment uses only the Python standard library. Inst
    ```
 
 4. The comparison should show no differing CSV lines. Inspect `reproduction_results/final_results.json`, `reproduction_results/main_results.csv`, `reproduction_results/summary.json`, and both new SVG figures. `src/validate_results.py` validates the published `results/` folder; it does not target the separate rerun folder.
-5. Appendix B records Bekzat's review of the 73 selected cases. The **local-only** `results/audit_review_local.html` allows a second reviewer to check or correct the labels. Rebuild the report with `py -3.12 src/build_report.py` after any correction. Do not upload the local HTML or source-text cache.
-6. Appendix C records Nuradilet's reported separate run and the matching main results. Fill its pending machine, Python and date fields from his actual setup. The independent run logs were not transferred to this computer.
+5. Appendix B records Bekzat Rashiduly's review of the 73 selected cases. The **local-only** `results/audit_review_local.html` allows a second reviewer to check or correct the labels. Rebuild the report with `py -3.12 src/build_report.py` after any correction. Do not upload the local HTML or source-text cache.
+6. Appendix C records Nuradilet Mustafa's reported separate run and the matching main results. Fill its pending machine, Python and date fields from his actual setup. The independent run logs were not transferred to this computer.
 
 For an additional same-machine integrity check, `py -3.12 src/recheck_from_cache.py` recomputes all twelve deterministic outputs from local cached rows. This check does not replace the independent person required in Appendix C.
 

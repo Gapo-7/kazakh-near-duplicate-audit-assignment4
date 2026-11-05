@@ -15,6 +15,7 @@ INCLUDE = [
     *sorted((ROOT / "src").glob("*.py")),
     ROOT / "config" / "frozen_protocol.json",
     ROOT / "protocol" / "Assignment4_Appendix_A_Protocol_Freeze.docx",
+    ROOT / "protocol" / "Assignment4_Appendix_A_Submission_Copy.docx",
     ROOT / "protocol" / "local_freeze_record.json",
     ROOT / "protocol" / "deviations_log.md",
     ROOT / "protocol" / "manual_audit_codebook.md",

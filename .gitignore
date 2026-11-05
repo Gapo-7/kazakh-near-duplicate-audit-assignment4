@@ -1,0 +1,13 @@
+data/
+protocol/moodle_upload_record.txt
+protocol/rendered/
+protocol/*.pdf
+report/rendered/
+report/*.pdf
+report/review*.png
+report/final_page*.png
+work/
+__pycache__/
+*.pyc
+*.tmp
+results/audit_review_local.html

@@ -1,0 +1,4 @@
+# Python 3.12+ standard library for the experiment. Pillow builds PNG figures.
+# python-docx rebuilds the Word protocol and report documents.
+Pillow==13.0.0
+python-docx==1.2.0

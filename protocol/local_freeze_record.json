@@ -1,0 +1,7 @@
+{
+  "created_utc": "2026-11-05T08:26:57.664077+00:00",
+  "protocol_sha256": "9eb02e01a28fe706359ad856d60f0e8cea7200c608b58e31c37db224fff1ca9c",
+  "appendix_sha256": "9d4f21c6e84a925bc208bf1ddb0050a03458807ae6f62e842bd79a5226d55c4c",
+  "moodle_uploaded": false,
+  "deviation": "The user found no separate protocol submission in Moodle and requested completing the project before uploading. Appendix A was fixed locally before the final run and will be submitted with the report; this does not satisfy the brief's pre-run Moodle timestamp rule."
+}

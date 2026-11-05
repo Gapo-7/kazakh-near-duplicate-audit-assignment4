@@ -1,0 +1,147 @@
+{
+  "source_key": "news_summary",
+  "source_label": "Kazakh news summarization documents",
+  "dataset": "shayekh/kazakh-news-summarization-20k-adapted",
+  "config": "default",
+  "revision": "2f959b96478d988240f200c03ec765633cd36be6",
+  "run_seed": 20261106,
+  "raw_sample": 2000,
+  "block_starts": [
+    100,
+    400,
+    2500,
+    3100,
+    3900,
+    6200,
+    9600,
+    10700,
+    10900,
+    12100,
+    12600,
+    12900,
+    15100,
+    16400,
+    16900,
+    25900,
+    27400,
+    28400,
+    29300,
+    30900
+  ],
+  "excluded": {
+    "below_min_words": 527,
+    "missing_field": 500,
+    "exact_removed": 28
+  },
+  "eligible_before_exact": 973,
+  "post_exact": 945,
+  "total_words_post_exact": 322614,
+  "median_words_post_exact": 244,
+  "post_exact_characters": 2546125,
+  "source_name_counts": {
+    "baq": 689,
+    "stan": 184,
+    "informburo": 72
+  },
+  "exact_only": {
+    "flagged_records": 0,
+    "retained_records": 945
+  },
+  "methods": {
+    "word_5": {
+      "pairs_checked": 162856,
+      "pairs_skipped_by_size_bound": 283184,
+      "runtime_seconds": 0.848,
+      "threshold_results": {
+        "0.75": {
+          "pair_count": 0,
+          "cluster_count": 945,
+          "largest_cluster": 1,
+          "flagged_records": 0,
+          "flag_rate": 0.0,
+          "retained_records": 945,
+          "retained_characters": 2546125,
+          "flagged_row_indices": []
+        },
+        "0.8": {
+          "pair_count": 0,
+          "cluster_count": 945,
+          "largest_cluster": 1,
+          "flagged_records": 0,
+          "flag_rate": 0.0,
+          "retained_records": 945,
+          "retained_characters": 2546125,
+          "flagged_row_indices": []
+        },
+        "0.85": {
+          "pair_count": 0,
+          "cluster_count": 945,
+          "largest_cluster": 1,
+          "flagged_records": 0,
+          "flag_rate": 0.0,
+          "retained_records": 945,
+          "retained_characters": 2546125,
+          "flagged_row_indices": []
+        },
+        "0.9": {
+          "pair_count": 0,
+          "cluster_count": 945,
+          "largest_cluster": 1,
+          "flagged_records": 0,
+          "flag_rate": 0.0,
+          "retained_records": 945,
+          "retained_characters": 2546125,
+          "flagged_row_indices": []
+        }
+      }
+    },
+    "character_7": {
+      "pairs_checked": 168114,
+      "pairs_skipped_by_size_bound": 277926,
+      "runtime_seconds": 5.914,
+      "threshold_results": {
+        "0.75": {
+          "pair_count": 0,
+          "cluster_count": 945,
+          "largest_cluster": 1,
+          "flagged_records": 0,
+          "flag_rate": 0.0,
+          "retained_records": 945,
+          "retained_characters": 2546125,
+          "flagged_row_indices": []
+        },
+        "0.8": {
+          "pair_count": 0,
+          "cluster_count": 945,
+          "largest_cluster": 1,
+          "flagged_records": 0,
+          "flag_rate": 0.0,
+          "retained_records": 945,
+          "retained_characters": 2546125,
+          "flagged_row_indices": []
+        },
+        "0.85": {
+          "pair_count": 0,
+          "cluster_count": 945,
+          "largest_cluster": 1,
+          "flagged_records": 0,
+          "flag_rate": 0.0,
+          "retained_records": 945,
+          "retained_characters": 2546125,
+          "flagged_row_indices": []
+        },
+        "0.9": {
+          "pair_count": 0,
+          "cluster_count": 945,
+          "largest_cluster": 1,
+          "flagged_records": 0,
+          "flag_rate": 0.0,
+          "retained_records": 945,
+          "retained_characters": 2546125,
+          "flagged_row_indices": []
+        }
+      }
+    }
+  },
+  "total_runtime_seconds": 63.806
+}

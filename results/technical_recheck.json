@@ -1,0 +1,67 @@
+{
+  "checked_utc": "2026-11-05T08:55:58.878242+00:00",
+  "final_results_sha256": "61b6baa3d8e50844a616c874a2a23a542fa354b7c4963a322852ac84ae026ec8",
+  "checked_runs": [
+    {
+      "source_key": "wikipedia_kk",
+      "seed": 20261105,
+      "matched": true
+    },
+    {
+      "source_key": "wikipedia_kk",
+      "seed": 20261106,
+      "matched": true
+    },
+    {
+      "source_key": "wikipedia_kk",
+      "seed": 20261107,
+      "matched": true
+    },
+    {
+      "source_key": "kaz_news",
+      "seed": 20261105,
+      "matched": true
+    },
+    {
+      "source_key": "kaz_news",
+      "seed": 20261106,
+      "matched": true
+    },
+    {
+      "source_key": "kaz_news",
+      "seed": 20261107,
+      "matched": true
+    },
+    {
+      "source_key": "engime",
+      "seed": 20261105,
+      "matched": true
+    },
+    {
+      "source_key": "engime",
+      "seed": 20261106,
+      "matched": true
+    },
+    {
+      "source_key": "engime",
+      "seed": 20261107,
+      "matched": true
+    },
+    {
+      "source_key": "news_summary",
+      "seed": 20261105,
+      "matched": true
+    },
+    {
+      "source_key": "news_summary",
+      "seed": 20261106,
+      "matched": true
+    },
+    {
+      "source_key": "news_summary",
+      "seed": 20261107,
+      "matched": true
+    }
+  ],
+  "note": "Same-machine cache recomputation by project scripts; not an independent student reproduction."
+}

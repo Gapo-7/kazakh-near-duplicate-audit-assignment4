@@ -1,0 +1,154 @@
+{
+  "source_key": "engime",
+  "source_label": "Engime educational pages",
+  "dataset": "nyuuzyou/engime",
+  "config": "default",
+  "revision": "7b081acca15547ab080138ca381983645ad30d1c",
+  "run_seed": 20261107,
+  "raw_sample": 1500,
+  "block_starts": [
+    151300,
+    230700,
+    233300,
+    337800,
+    1220200,
+    1686900,
+    1926600,
+    1976900,
+    2098600,
+    2258700,
+    2358600,
+    2360100,
+    2411000,
+    2645000,
+    2652400
+  ],
+  "excluded": {
+    "uncertain_kazakh": 137,
+    "below_min_words": 443,
+    "above_max_words": 10,
+    "exact_removed": 421
+  },
+  "eligible_before_exact": 910,
+  "post_exact": 489,
+  "total_words_post_exact": 287964,
+  "median_words_post_exact": 291,
+  "post_exact_characters": 2263108,
+  "source_name_counts": {
+    "engime": 489
+  },
+  "exact_only": {
+    "flagged_records": 0,
+    "retained_records": 489
+  },
+  "methods": {
+    "word_5": {
+      "pairs_checked": 32142,
+      "pairs_skipped_by_size_bound": 87174,
+      "runtime_seconds": 0.274,
+      "threshold_results": {
+        "0.75": {
+          "pair_count": 2,
+          "cluster_count": 487,
+          "largest_cluster": 2,
+          "flagged_records": 2,
+          "flag_rate": 0.00408997955010225,
+          "retained_records": 487,
+          "retained_characters": 2260245,
+          "flagged_row_indices": [
+            2645049,
+            2652463
+          ]
+        },
+        "0.8": {
+          "pair_count": 1,
+          "cluster_count": 488,
+          "largest_cluster": 2,
+          "flagged_records": 1,
+          "flag_rate": 0.002044989775051125,
+          "retained_records": 488,
+          "retained_characters": 2261168,
+          "flagged_row_indices": [
+            2645049
+          ]
+        },
+        "0.85": {
+          "pair_count": 1,
+          "cluster_count": 488,
+          "largest_cluster": 2,
+          "flagged_records": 1,
+          "flag_rate": 0.002044989775051125,
+          "retained_records": 488,
+          "retained_characters": 2261168,
+          "flagged_row_indices": [
+            2645049
+          ]
+        },
+        "0.9": {
+          "pair_count": 0,
+          "cluster_count": 489,
+          "largest_cluster": 1,
+          "flagged_records": 0,
+          "flag_rate": 0.0,
+          "retained_records": 489,
+          "retained_characters": 2263108,
+          "flagged_row_indices": []
+        }
+      }
+    },
+    "character_7": {
+      "pairs_checked": 32363,
+      "pairs_skipped_by_size_bound": 86953,
+      "runtime_seconds": 1.578,
+      "threshold_results": {
+        "0.75": {
+          "pair_count": 1,
+          "cluster_count": 488,
+          "largest_cluster": 2,
+          "flagged_records": 1,
+          "flag_rate": 0.002044989775051125,
+          "retained_records": 488,
+          "retained_characters": 2261168,
+          "flagged_row_indices": [
+            2645049
+          ]
+        },
+        "0.8": {
+          "pair_count": 1,
+          "cluster_count": 488,
+          "largest_cluster": 2,
+          "flagged_records": 1,
+          "flag_rate": 0.002044989775051125,
+          "retained_records": 488,
+          "retained_characters": 2261168,
+          "flagged_row_indices": [
+            2645049
+          ]
+        },
+        "0.85": {
+          "pair_count": 1,
+          "cluster_count": 488,
+          "largest_cluster": 2,
+          "flagged_records": 1,
+          "flag_rate": 0.002044989775051125,
+          "retained_records": 488,
+          "retained_characters": 2261168,
+          "flagged_row_indices": [
+            2645049
+          ]
+        },
+        "0.9": {
+          "pair_count": 0,
+          "cluster_count": 489,
+          "largest_cluster": 1,
+          "flagged_records": 0,
+          "flag_rate": 0.0,
+          "retained_records": 489,
+          "retained_characters": 2263108,
+          "flagged_row_indices": []
+        }
+      }
+    }
+  },
+  "total_runtime_seconds": 45.636
+}

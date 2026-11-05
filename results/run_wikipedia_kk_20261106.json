@@ -1,0 +1,163 @@
+{
+  "source_key": "wikipedia_kk",
+  "source_label": "Kazakh Wikipedia",
+  "dataset": "wikimedia/wikipedia",
+  "config": "20231101.kk",
+  "revision": "b04c8d1ceb2f5cd4588862100d08de323dccfbaa",
+  "run_seed": 20261106,
+  "raw_sample": 3000,
+  "block_starts": [
+    4500,
+    7600,
+    26700,
+    28000,
+    31300,
+    47500,
+    51300,
+    59700,
+    62700,
+    67100,
+    80400,
+    104400,
+    115200,
+    118300,
+    122100,
+    123100,
+    127800,
+    143700,
+    154900,
+    160200,
+    165400,
+    190300,
+    191300,
+    194000,
+    198500,
+    198600,
+    203000,
+    207600,
+    218700,
+    229100
+  ],
+  "excluded": {
+    "below_min_words": 2353,
+    "above_max_words": 2
+  },
+  "eligible_before_exact": 645,
+  "post_exact": 645,
+  "total_words_post_exact": 280391,
+  "median_words_post_exact": 263,
+  "post_exact_characters": 2184513,
+  "source_name_counts": {
+    "wikipedia_kk": 645
+  },
+  "exact_only": {
+    "flagged_records": 0,
+    "retained_records": 645
+  },
+  "methods": {
+    "word_5": {
+      "pairs_checked": 64316,
+      "pairs_skipped_by_size_bound": 143374,
+      "runtime_seconds": 1.905,
+      "threshold_results": {
+        "0.75": {
+          "pair_count": 2,
+          "cluster_count": 643,
+          "largest_cluster": 3,
+          "flagged_records": 2,
+          "flag_rate": 0.0031007751937984496,
+          "retained_records": 643,
+          "retained_characters": 2180743,
+          "flagged_row_indices": [
+            218742,
+            218765
+          ]
+        },
+        "0.8": {
+          "pair_count": 0,
+          "cluster_count": 645,
+          "largest_cluster": 1,
+          "flagged_records": 0,
+          "flag_rate": 0.0,
+          "retained_records": 645,
+          "retained_characters": 2184513,
+          "flagged_row_indices": []
+        },
+        "0.85": {
+          "pair_count": 0,
+          "cluster_count": 645,
+          "largest_cluster": 1,
+          "flagged_records": 0,
+          "flag_rate": 0.0,
+          "retained_records": 645,
+          "retained_characters": 2184513,
+          "flagged_row_indices": []
+        },
+        "0.9": {
+          "pair_count": 0,
+          "cluster_count": 645,
+          "largest_cluster": 1,
+          "flagged_records": 0,
+          "flag_rate": 0.0,
+          "retained_records": 645,
+          "retained_characters": 2184513,
+          "flagged_row_indices": []
+        }
+      }
+    },
+    "character_7": {
+      "pairs_checked": 66407,
+      "pairs_skipped_by_size_bound": 141283,
+      "runtime_seconds": 10.524,
+      "threshold_results": {
+        "0.75": {
+          "pair_count": 3,
+          "cluster_count": 643,
+          "largest_cluster": 3,
+          "flagged_records": 2,
+          "flag_rate": 0.0031007751937984496,
+          "retained_records": 643,
+          "retained_characters": 2180743,
+          "flagged_row_indices": [
+            218742,
+            218765
+          ]
+        },
+        "0.8": {
+          "pair_count": 2,
+          "cluster_count": 643,
+          "largest_cluster": 3,
+          "flagged_records": 2,
+          "flag_rate": 0.0031007751937984496,
+          "retained_records": 643,
+          "retained_characters": 2180743,
+          "flagged_row_indices": [
+            218742,
+            218765
+          ]
+        },
+        "0.85": {
+          "pair_count": 0,
+          "cluster_count": 645,
+          "largest_cluster": 1,
+          "flagged_records": 0,
+          "flag_rate": 0.0,
+          "retained_records": 645,
+          "retained_characters": 2184513,
+          "flagged_row_indices": []
+        },
+        "0.9": {
+          "pair_count": 0,
+          "cluster_count": 645,
+          "largest_cluster": 1,
+          "flagged_records": 0,
+          "flag_rate": 0.0,
+          "retained_records": 645,
+          "retained_characters": 2184513,
+          "flagged_row_indices": []
+        }
+      }
+    }
+  },
+  "total_runtime_seconds": 81.432
+}

@@ -1,0 +1,199 @@
+{
+  "protocol_selection_sha256": "968d25eb00f46c45c8be7d4777d391093f04251e02ec2d8356c44f9dd4a9076d",
+  "corpora": [
+    {
+      "source_key": "wikipedia_kk",
+      "source_label": "Kazakh Wikipedia",
+      "raw_rows_total": 9000,
+      "eligible_post_exact_total": 1575,
+      "exact_removed_total": 0,
+      "character_flags_total": 2,
+      "word_flags_total": 0,
+      "character_mean_rate": 0.0010335917312661498,
+      "character_sd_rate": 0.0017902333928360489,
+      "word_mean_rate": 0.0,
+      "word_sd_rate": 0.0,
+      "difference_percentage_points": 0.10335917312661498,
+      "per_run": [
+        {
+          "seed": 20261105,
+          "post_exact": 537,
+          "character_flags": 0,
+          "character_rate": 0.0,
+          "word_flags": 0,
+          "word_rate": 0.0
+        },
+        {
+          "seed": 20261106,
+          "post_exact": 645,
+          "character_flags": 2,
+          "character_rate": 0.0031007751937984496,
+          "word_flags": 0,
+          "word_rate": 0.0
+        },
+        {
+          "seed": 20261107,
+          "post_exact": 393,
+          "character_flags": 0,
+          "character_rate": 0.0,
+          "word_flags": 0,
+          "word_rate": 0.0
+        }
+      ],
+      "threshold_mean_rates": {
+        "0.75": 0.0010335917312661498,
+        "0.8": 0.0010335917312661498,
+        "0.85": 0.0,
+        "0.9": 0.0
+      },
+      "exact_sign_flip_p": 1.0,
+      "holm_adjusted_p": 1.0
+    },
+    {
+      "source_key": "kaz_news",
+      "source_label": "Kazakh News Corpus",
+      "raw_rows_total": 6000,
+      "eligible_post_exact_total": 3834,
+      "exact_removed_total": 0,
+      "character_flags_total": 103,
+      "word_flags_total": 98,
+      "character_mean_rate": 0.026300663467270693,
+      "character_sd_rate": 0.023249551119299525,
+      "word_mean_rate": 0.02501537891672035,
+      "word_sd_rate": 0.022607238240987815,
+      "difference_percentage_points": 0.12852845505503424,
+      "per_run": [
+        {
+          "seed": 20261105,
+          "post_exact": 1292,
+          "character_flags": 41,
+          "character_rate": 0.03173374613003096,
+          "word_flags": 37,
+          "word_rate": 0.02863777089783282
+        },
+        {
+          "seed": 20261106,
+          "post_exact": 1226,
+          "character_flags": 1,
+          "character_rate": 0.0008156606851549756,
+          "word_flags": 1,
+          "word_rate": 0.0008156606851549756
+        },
+        {
+          "seed": 20261107,
+          "post_exact": 1316,
+          "character_flags": 61,
+          "character_rate": 0.04635258358662614,
+          "word_flags": 60,
+          "word_rate": 0.04559270516717325
+        }
+      ],
+      "threshold_mean_rates": {
+        "0.75": 0.02657255036232235,
+        "0.8": 0.026300663467270693,
+        "0.85": 0.024504088174219542,
+        "0.9": 0.01941941152640476
+      },
+      "exact_sign_flip_p": 0.5,
+      "holm_adjusted_p": 1.0
+    },
+    {
+      "source_key": "engime",
+      "source_label": "Engime educational pages",
+      "raw_rows_total": 4500,
+      "eligible_post_exact_total": 1323,
+      "exact_removed_total": 1201,
+      "character_flags_total": 1,
+      "word_flags_total": 1,
+      "character_mean_rate": 0.0006816632583503749,
+      "character_sd_rate": 0.0011806753971157992,
+      "word_mean_rate": 0.0006816632583503749,
+      "word_sd_rate": 0.0011806753971157992,
+      "difference_percentage_points": 0.0,
+      "per_run": [
+        {
+          "seed": 20261105,
+          "post_exact": 500,
+          "character_flags": 0,
+          "character_rate": 0.0,
+          "word_flags": 0,
+          "word_rate": 0.0
+        },
+        {
+          "seed": 20261106,
+          "post_exact": 334,
+          "character_flags": 0,
+          "character_rate": 0.0,
+          "word_flags": 0,
+          "word_rate": 0.0
+        },
+        {
+          "seed": 20261107,
+          "post_exact": 489,
+          "character_flags": 1,
+          "character_rate": 0.002044989775051125,
+          "word_flags": 1,
+          "word_rate": 0.002044989775051125
+        }
+      ],
+      "threshold_mean_rates": {
+        "0.75": 0.0006816632583503749,
+        "0.8": 0.0006816632583503749,
+        "0.85": 0.0006816632583503749,
+        "0.9": 0.0
+      },
+      "exact_sign_flip_p": 1.0,
+      "holm_adjusted_p": 1.0
+    },
+    {
+      "source_key": "news_summary",
+      "source_label": "Kazakh news summarization documents",
+      "raw_rows_total": 6000,
+      "eligible_post_exact_total": 2928,
+      "exact_removed_total": 108,
+      "character_flags_total": 0,
+      "word_flags_total": 0,
+      "character_mean_rate": 0.0,
+      "character_sd_rate": 0.0,
+      "word_mean_rate": 0.0,
+      "word_sd_rate": 0.0,
+      "difference_percentage_points": 0.0,
+      "per_run": [
+        {
+          "seed": 20261105,
+          "post_exact": 890,
+          "character_flags": 0,
+          "character_rate": 0.0,
+          "word_flags": 0,
+          "word_rate": 0.0
+        },
+        {
+          "seed": 20261106,
+          "post_exact": 945,
+          "character_flags": 0,
+          "character_rate": 0.0,
+          "word_flags": 0,
+          "word_rate": 0.0
+        },
+        {
+          "seed": 20261107,
+          "post_exact": 1093,
+          "character_flags": 0,
+          "character_rate": 0.0,
+          "word_flags": 0,
+          "word_rate": 0.0
+        }
+      ],
+      "threshold_mean_rates": {
+        "0.75": 0.0003745318352059925,
+        "0.8": 0.0,
+        "0.85": 0.0,
+        "0.9": 0.0
+      },
+      "exact_sign_flip_p": 1.0,
+      "holm_adjusted_p": 1.0
+    }
+  ],
+  "statistical_note": "Exact sign-flip on three paired run-level differences; minimum nonzero two-sided p is 0.25. Disjoint block samples from one corpus are not fully independent. Comparisons are exploratory and do not estimate full-corpus prevalence.",
+  "input_results_sha256": "61b6baa3d8e50844a616c874a2a23a542fa354b7c4963a322852ac84ae026ec8"
+}

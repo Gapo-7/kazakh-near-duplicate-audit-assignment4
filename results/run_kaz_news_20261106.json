@@ -1,0 +1,160 @@
+{
+  "source_key": "kaz_news",
+  "source_label": "Kazakh News Corpus",
+  "dataset": "kurumikz/kaz-news-corpus",
+  "config": "default",
+  "revision": "efcfa2e4cb0a01c9feaf455ee91db040c162b380",
+  "run_seed": 20261106,
+  "raw_sample": 2000,
+  "block_starts": [
+    2600,
+    2900,
+    3700,
+    4200,
+    4300,
+    4500,
+    5300,
+    7800,
+    8800,
+    10100,
+    11000,
+    12500,
+    14000,
+    14300,
+    14900,
+    15100,
+    18700,
+    18900,
+    19500,
+    21600
+  ],
+  "excluded": {
+    "below_min_words": 774
+  },
+  "eligible_before_exact": 1226,
+  "post_exact": 1226,
+  "total_words_post_exact": 459461,
+  "median_words_post_exact": 250.0,
+  "post_exact_characters": 3637068,
+  "source_name_counts": {
+    "Egemen Qazaqstan": 299,
+    "Baq.kz": 597,
+    "Azattyq": 330
+  },
+  "exact_only": {
+    "flagged_records": 0,
+    "retained_records": 1226
+  },
+  "methods": {
+    "word_5": {
+      "pairs_checked": 260914,
+      "pairs_skipped_by_size_bound": 490011,
+      "runtime_seconds": 1.267,
+      "threshold_results": {
+        "0.75": {
+          "pair_count": 1,
+          "cluster_count": 1225,
+          "largest_cluster": 2,
+          "flagged_records": 1,
+          "flag_rate": 0.0008156606851549756,
+          "retained_records": 1225,
+          "retained_characters": 3627958,
+          "flagged_row_indices": [
+            14957
+          ]
+        },
+        "0.8": {
+          "pair_count": 1,
+          "cluster_count": 1225,
+          "largest_cluster": 2,
+          "flagged_records": 1,
+          "flag_rate": 0.0008156606851549756,
+          "retained_records": 1225,
+          "retained_characters": 3627958,
+          "flagged_row_indices": [
+            14957
+          ]
+        },
+        "0.85": {
+          "pair_count": 1,
+          "cluster_count": 1225,
+          "largest_cluster": 2,
+          "flagged_records": 1,
+          "flag_rate": 0.0008156606851549756,
+          "retained_records": 1225,
+          "retained_characters": 3627958,
+          "flagged_row_indices": [
+            14957
+          ]
+        },
+        "0.9": {
+          "pair_count": 0,
+          "cluster_count": 1226,
+          "largest_cluster": 1,
+          "flagged_records": 0,
+          "flag_rate": 0.0,
+          "retained_records": 1226,
+          "retained_characters": 3637068,
+          "flagged_row_indices": []
+        }
+      }
+    },
+    "character_7": {
+      "pairs_checked": 268748,
+      "pairs_skipped_by_size_bound": 482177,
+      "runtime_seconds": 9.102,
+      "threshold_results": {
+        "0.75": {
+          "pair_count": 2,
+          "cluster_count": 1224,
+          "largest_cluster": 2,
+          "flagged_records": 2,
+          "flag_rate": 0.0016313213703099511,
+          "retained_records": 1224,
+          "retained_characters": 3626132,
+          "flagged_row_indices": [
+            12596,
+            14957
+          ]
+        },
+        "0.8": {
+          "pair_count": 1,
+          "cluster_count": 1225,
+          "largest_cluster": 2,
+          "flagged_records": 1,
+          "flag_rate": 0.0008156606851549756,
+          "retained_records": 1225,
+          "retained_characters": 3627958,
+          "flagged_row_indices": [
+            14957
+          ]
+        },
+        "0.85": {
+          "pair_count": 1,
+          "cluster_count": 1225,
+          "largest_cluster": 2,
+          "flagged_records": 1,
+          "flag_rate": 0.0008156606851549756,
+          "retained_records": 1225,
+          "retained_characters": 3627958,
+          "flagged_row_indices": [
+            14957
+          ]
+        },
+        "0.9": {
+          "pair_count": 1,
+          "cluster_count": 1225,
+          "largest_cluster": 2,
+          "flagged_records": 1,
+          "flag_rate": 0.0008156606851549756,
+          "retained_records": 1225,
+          "retained_characters": 3627958,
+          "flagged_row_indices": [
+            14957
+          ]
+        }
+      }
+    }
+  },
+  "total_runtime_seconds": 59.36
+}

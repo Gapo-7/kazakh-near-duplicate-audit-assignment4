@@ -25,17 +25,16 @@ Python 3.12 or later. The experiment uses only the Python standard library. Inst
 
 1. Preferred course-compliant route: upload Appendix A to Moodle before running any final sample, and save its real upload timestamp as `protocol/moodle_upload_record.txt`. In the current user-directed route, run `src/create_local_freeze.py` before the final experiment and disclose the missing pre-run Moodle upload.
 2. Confirm that `config/frozen_protocol.json` has not changed since the freeze.
-3. Run:
+3. The published package already contains `results/final_results.json`. To rerun from the source datasets without overwriting the published evidence, use separate cache and output folders:
 
    ```powershell
    py -3.12 -m pip install -r requirements.txt
-   py -3.12 src/run_experiment.py --local-freeze-record protocol/local_freeze_record.json
-   py -3.12 src/summarize_results.py
-   py -3.12 src/validate_results.py
-   py -3.12 src/prepare_audit.py
+   py -3.12 src/run_experiment.py --local-freeze-record protocol/local_freeze_record.json --cache-dir reproduction_cache --out-dir reproduction_results
+   py -3.12 src/summarize_results.py --input reproduction_results/final_results.json --out-dir reproduction_results
+   Compare-Object (Get-Content results/main_results.csv) (Get-Content reproduction_results/main_results.csv)
    ```
 
-4. Inspect `results/final_results.json`, `results/main_results.csv`, `results/summary.json`, and both SVG figures.
+4. The comparison should show no differing CSV lines. Inspect `reproduction_results/final_results.json`, `reproduction_results/main_results.csv`, `reproduction_results/summary.json`, and both new SVG figures. `src/validate_results.py` validates the published `results/` folder; it does not target the separate rerun folder.
 5. Review all 73 selected cases in the **local-only** `results/audit_review_local.html`. The CSV has AI-assisted draft labels and reasons; a bilingual student must verify and correct them, then update the reviewer field. Rebuild the report with `py -3.12 src/build_report.py`. Do not upload the local HTML or source-text cache.
 6. For the independent reproduction test, another team member or classmate runs the same commands on a clean machine. Record their actual machine, commands, outcome and any differences in Appendix C. Never invent this record.
 

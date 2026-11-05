@@ -22,6 +22,8 @@ if actual != record["appendix_sha256"]:
     raise SystemExit("The original Appendix A no longer matches the local freeze record")
 
 doc = Document(SOURCE)
+for style_name in ("Normal", "Title", "Subtitle", "Heading 1"):
+    doc.styles[style_name].font.name = "Times New Roman"
 for paragraph in doc.paragraphs:
     if paragraph.text.startswith("Student(s):"):
         paragraph.text = f"Student(s): {AUTHORS}"
@@ -30,6 +32,16 @@ for paragraph in doc.paragraphs:
             f"Group: {GROUP}   Moodle upload date and time: "
             "Not uploaded before final experiments"
         )
+
+for paragraph in doc.paragraphs:
+    for run in paragraph.runs:
+        run.font.name = "Times New Roman"
+for table in doc.tables:
+    for row in table.rows:
+        for cell in row.cells:
+            for paragraph in cell.paragraphs:
+                for run in paragraph.runs:
+                    run.font.name = "Times New Roman"
 
 doc.save(OUTPUT)
 print(OUTPUT)

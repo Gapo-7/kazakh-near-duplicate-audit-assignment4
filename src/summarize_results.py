@@ -20,7 +20,7 @@ COLORS = ("#1d5f87", "#bf5b30", "#41916b", "#8064a2")
 
 
 def font(size: int, bold: bool = False):
-    name = "arialbd.ttf" if bold else "arial.ttf"
+    name = "timesbd.ttf" if bold else "times.ttf"
     try:
         return ImageFont.truetype(name, size)
     except OSError:
@@ -152,14 +152,14 @@ def figure_bars(rows: list[dict]) -> str:
     ceiling = max(.5, maximum * 1.25)
     pieces = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}">',
               '<rect width="100%" height="100%" fill="white"/>',
-              '<text x="450" y="35" text-anchor="middle" font-family="Arial" font-size="21" font-weight="bold">Residual near-duplicate flags by corpus</text>',
+              '<text x="450" y="35" text-anchor="middle" font-family="Times New Roman" font-size="21" font-weight="bold">Residual near-duplicate flags by corpus</text>',
               f'<line x1="{x0}" y1="{y0+ploth}" x2="{x0+plotw}" y2="{y0+ploth}" stroke="#333"/>',
               f'<line x1="{x0}" y1="{y0}" x2="{x0}" y2="{y0+ploth}" stroke="#333"/>']
     for tick in range(5):
         value = ceiling * tick / 4
         y = y0 + ploth * (1 - tick / 4)
         pieces.append(f'<line x1="{x0}" y1="{y:.1f}" x2="{x0+plotw}" y2="{y:.1f}" stroke="#e1e4e8"/>')
-        pieces.append(f'<text x="{x0-9}" y="{y+5:.1f}" text-anchor="end" font-family="Arial" font-size="13">{value:.1f}</text>')
+        pieces.append(f'<text x="{x0-9}" y="{y+5:.1f}" text-anchor="end" font-family="Times New Roman" font-size="13">{value:.1f}</text>')
     for idx, row in enumerate(rows):
         center = x0 + plotw * (idx + .5) / 4
         for offset, key, sd, color in ((-28, "word_mean_rate", "word_sd_rate", "#9aa9b2"), (8, "character_mean_rate", "character_sd_rate", "#1d5f87")):
@@ -169,11 +169,11 @@ def figure_bars(rows: list[dict]) -> str:
             pieces.append(f'<rect x="{x:.1f}" y="{y:.1f}" width="21" height="{max(height,1):.1f}" fill="{color}"/>')
             error = ploth * 100 * row[sd] / ceiling
             pieces.append(f'<line x1="{x+10.5:.1f}" y1="{y-error:.1f}" x2="{x+10.5:.1f}" y2="{y+error:.1f}" stroke="#333"/>')
-        pieces.append(f'<text x="{center:.1f}" y="{y0+ploth+25}" text-anchor="middle" font-family="Arial" font-size="13">{escape(labels[idx])}</text>')
-    pieces += ['<text x="24" y="255" transform="rotate(-90 24 255)" font-family="Arial" font-size="14">Mean flagged records (%)</text>',
-               '<rect x="294" y="467" width="17" height="17" fill="#9aa9b2"/><text x="318" y="481" font-family="Arial" font-size="14">Word 5-gram baseline</text>',
-               '<rect x="505" y="467" width="17" height="17" fill="#1d5f87"/><text x="529" y="481" font-family="Arial" font-size="14">Character 7-gram</text>',
-               '<text x="450" y="507" text-anchor="middle" font-family="Arial" font-size="12">Error bars: sample SD across three fixed block samples</text>', '</svg>']
+        pieces.append(f'<text x="{center:.1f}" y="{y0+ploth+25}" text-anchor="middle" font-family="Times New Roman" font-size="13">{escape(labels[idx])}</text>')
+    pieces += ['<text x="24" y="255" transform="rotate(-90 24 255)" font-family="Times New Roman" font-size="14">Mean flagged records (%)</text>',
+               '<rect x="294" y="467" width="17" height="17" fill="#9aa9b2"/><text x="318" y="481" font-family="Times New Roman" font-size="14">Word 5-gram baseline</text>',
+               '<rect x="505" y="467" width="17" height="17" fill="#1d5f87"/><text x="529" y="481" font-family="Times New Roman" font-size="14">Character 7-gram</text>',
+               '<text x="450" y="507" text-anchor="middle" font-family="Times New Roman" font-size="12">Error bars: sample SD across three fixed block samples</text>', '</svg>']
     return "\n".join(pieces)
 
 
@@ -184,17 +184,17 @@ def figure_sensitivity(rows: list[dict]) -> str:
     ceiling = max(.5, maximum * 1.2)
     pieces = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}">',
               '<rect width="100%" height="100%" fill="white"/>',
-              '<text x="450" y="35" text-anchor="middle" font-family="Arial" font-size="21" font-weight="bold">Threshold sensitivity of character 7-gram flags</text>',
+              '<text x="450" y="35" text-anchor="middle" font-family="Times New Roman" font-size="21" font-weight="bold">Threshold sensitivity of character 7-gram flags</text>',
               f'<line x1="{x0}" y1="{y0+ploth}" x2="{x0+plotw}" y2="{y0+ploth}" stroke="#333"/>',
               f'<line x1="{x0}" y1="{y0}" x2="{x0}" y2="{y0+ploth}" stroke="#333"/>']
     for tick in range(5):
         value = ceiling * tick / 4
         y = y0 + ploth * (1 - tick / 4)
         pieces.append(f'<line x1="{x0}" y1="{y:.1f}" x2="{x0+plotw}" y2="{y:.1f}" stroke="#e1e4e8"/>')
-        pieces.append(f'<text x="{x0-9}" y="{y+5:.1f}" text-anchor="end" font-family="Arial" font-size="13">{value:.1f}</text>')
+        pieces.append(f'<text x="{x0-9}" y="{y+5:.1f}" text-anchor="end" font-family="Times New Roman" font-size="13">{value:.1f}</text>')
     for idx, t in enumerate(THRESHOLDS):
         x = x0 + plotw * idx / 3
-        pieces.append(f'<text x="{x:.1f}" y="{y0+ploth+25}" text-anchor="middle" font-family="Arial" font-size="13">{float(t):.2f}</text>')
+        pieces.append(f'<text x="{x:.1f}" y="{y0+ploth+25}" text-anchor="middle" font-family="Times New Roman" font-size="13">{float(t):.2f}</text>')
     for idx, row in enumerate(rows):
         points = [(x0 + plotw * i / 3, y0 + ploth * (1 - 100 * row["threshold_mean_rates"][t] / ceiling)) for i, t in enumerate(THRESHOLDS)]
         color = COLORS[idx]
@@ -202,9 +202,9 @@ def figure_sensitivity(rows: list[dict]) -> str:
         for x, y in points:
             pieces.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="5" fill="{color}"/>')
         pieces.append(f'<line x1="{120+idx*190}" y1="470" x2="{155+idx*190}" y2="470" stroke="{color}" stroke-width="3"/>')
-        pieces.append(f'<text x="{160+idx*190}" y="475" font-family="Arial" font-size="13">{escape(row["source_label"][:18])}</text>')
-    pieces += ['<text x="24" y="255" transform="rotate(-90 24 255)" font-family="Arial" font-size="14">Mean flagged records (%)</text>',
-               '<text x="455" y="454" text-anchor="middle" font-family="Arial" font-size="14">Jaccard similarity threshold</text>', '</svg>']
+        pieces.append(f'<text x="{160+idx*190}" y="475" font-family="Times New Roman" font-size="13">{escape(row["source_label"][:18])}</text>')
+    pieces += ['<text x="24" y="255" transform="rotate(-90 24 255)" font-family="Times New Roman" font-size="14">Mean flagged records (%)</text>',
+               '<text x="455" y="454" text-anchor="middle" font-family="Times New Roman" font-size="14">Jaccard similarity threshold</text>', '</svg>']
     return "\n".join(pieces)
 
 

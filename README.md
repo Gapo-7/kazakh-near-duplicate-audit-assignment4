@@ -23,7 +23,7 @@ Python 3.12 or later. The experiment uses only the Python standard library. Inst
 
 ## Reproduce the final results
 
-1. Preferred course-compliant route: upload Appendix A to Moodle before running any final sample, and save its real upload timestamp as `protocol/moodle_upload_record.txt`. In the current user-directed route, run `src/create_local_freeze.py` before the final experiment and disclose the missing pre-run Moodle upload.
+1. The course-compliant route is to upload Appendix A to Moodle before running any final sample and save its real upload timestamp as `protocol/moodle_upload_record.txt`. For the completed study, `src/create_local_freeze.py` recorded a local freeze before the final experiment. The missing pre-run Moodle upload is disclosed as a deviation.
 2. Confirm that `config/frozen_protocol.json` has not changed since the freeze.
 3. The published package already contains `results/final_results.json`. To rerun from the source datasets without overwriting the published evidence, use separate cache and output folders:
 

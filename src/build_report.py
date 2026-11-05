@@ -151,7 +151,8 @@ def figure(path: Path, caption: str, width: float = 6.55):
 doc.add_paragraph("Residual Near Duplicate Content in Kazakh Language Datasets", style="Title")
 doc.add_paragraph("Assignment 4  Experiment Results and Discussion")
 doc.add_paragraph("Student(s): Gapar Galym; Bekzat Rashiduly; Nuradilet Mustafa")
-doc.add_paragraph("Group: Not supplied   Date: 5 November 2026")
+doc.add_paragraph("Group: SE-2418   Date: 5 November 2026")
+doc.add_paragraph("Roles: Gapar Galym — project owner; Bekzat Rashiduly — 73-pair manual audit; Nuradilet Mustafa — independent reproduction and result comparison.")
 
 heading("1 Research question aim objectives and hypothesis")
 para("Research question: To what extent does near-duplicate content remain in publicly available Kazakh-language datasets for LLM pretraining after exact deduplication? The aim is to quantify the additional redundancy in selected public Kazakh collections after a consistent exact pass. The objectives are to document four sources, define one repeatable similarity rule, apply it after exact removal, and compare the resulting document counts and rates. H1 predicts at least one substantive near-duplicate after exact deduplication in the final samples; H0 predicts none. The analysis concerns text records, not downstream language-model performance.")
@@ -230,6 +231,7 @@ para("For corpus maintainers, the practical use is a repeatable check after exac
 
 heading("8 Reproducibility statement")
 para("The package includes the frozen JSON manifest, Python scripts, installation instructions, per-run result checkpoints, final raw result JSON, derived CSV and figures, selected audit metadata and the local freeze record. Dataset text is retrieved from the public source cards at recorded revisions and cached only locally; it is not included in the public package. The supplied validator checks all 12 runs and key count identities. Nuradilet Mustafa reported that his separate run matched the main results; his machine details and logs have not yet been transferred. Appendix C distinguishes that report from the documented same-machine rerun. The `assignment-4` Git release contains the project files.")
+para("Repository release: https://github.com/Gapo-7/kazakh-near-duplicate-audit-assignment4/releases/tag/assignment-4")
 
 heading("References")
 refs = [
@@ -251,7 +253,7 @@ doc.add_paragraph("The original Appendix A DOCX and frozen_protocol.json accompa
 heading("Appendix B  Error analysis")
 doc.add_paragraph("The complete case-level CSV accompanies this report. Bekzat Rashiduly's labels were recorded against row IDs and scores; source texts stay local. The categories and counts are in Table 4.")
 heading("Appendix C  Independent reproduction")
-doc.add_paragraph("The separate Appendix C records Nuradilet Mustafa's reported matching run on his computer. His date, machine, Python version and command history remain to be supplied because his logs were not transferred. A separately documented run on the Gapar Galym's computer matched all twelve results.")
+doc.add_paragraph("The separate Appendix C records Nuradilet Mustafa's reported matching run on his computer. His date, machine, Python version and command history were not provided, so they are marked unavailable rather than inferred from another run. A separately documented run on Gapar Galym's computer matched all twelve results.")
 
 out = ROOT / "report" / "Assignment4_Kazakh_Near_Duplicate_Results.docx"
 out.parent.mkdir(parents=True, exist_ok=True)

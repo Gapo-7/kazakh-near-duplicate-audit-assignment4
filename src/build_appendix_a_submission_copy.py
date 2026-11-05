@@ -14,7 +14,7 @@ SOURCE = ROOT / "protocol" / "Assignment4_Appendix_A_Protocol_Freeze.docx"
 OUTPUT = ROOT / "protocol" / "Assignment4_Appendix_A_Submission_Copy.docx"
 RECORD = ROOT / "protocol" / "local_freeze_record.json"
 AUTHORS = "Gapar Galym; Bekzat Rashiduly; Nuradilet Mustafa"
-GROUP = "Not supplied"
+GROUP = "SE-2418"
 
 record = json.loads(RECORD.read_text(encoding="utf-8"))
 actual = hashlib.sha256(SOURCE.read_bytes()).hexdigest()

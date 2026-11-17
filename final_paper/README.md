@@ -44,3 +44,4 @@ for error analysis, so they cannot estimate full-corpus precision or recall.
 To repeat the experiment from the public datasets, follow the repository's
 main README. That route needs network access and the pinned source revisions;
 use separate cache and output folders. Do not overwrite the released logs.
+See `DATA_RIGHTS.md` for the four source cards and the release boundary.

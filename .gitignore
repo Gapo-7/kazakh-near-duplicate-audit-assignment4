@@ -3,6 +3,7 @@ protocol/moodle_upload_record.txt
 protocol/rendered/
 protocol/*.pdf
 report/rendered/
+report/rendered_tnr/
 report/*.pdf
 report/review*.png
 report/final_page*.png

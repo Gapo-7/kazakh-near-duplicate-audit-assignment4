@@ -60,6 +60,14 @@ For each corpus and seed, exclude missing texts, texts outside 150–5,000 white
 
 The primary outcome is the character-method redundant-record count divided by the post-exact eligible count, reported separately for each corpus. These are sample-conditional automatic flags. Manual audit is needed before calling every flag a true content duplicate. Block sampling and unavailable neighbours outside each sample limit claims about full-corpus prevalence.
 
+## Final paper numerical evidence
+
+`final_paper/README.md` gives one command sequence and a file-by-file map for
+rebuilding every numerical Results table and figure from the released logs.
+`src/reproduce_final_paper.py` checks the recorded 73-pair audit against the
+candidate metadata and writes Table 2, Table 3, threshold and review-count
+CSVs. It does not independently verify human labels.
+
 ## Integrity and privacy
 
 Every number in the report should be traceable to `results/final_results.json` or `results/summary.json`. Keep raw downloaded text, any local review copies and Moodle evidence out of the public repository. Do not include passwords, tokens or personal data in commits. A `LICENSE` file and a tagged `assignment-4` release are required before final submission.

@@ -1,0 +1,6 @@
+source_key,Collection,Raw rows,Post-exact records,MD5 removals,Character 7-gram flags,Word 5-gram flags
+wikipedia_kk,Kazakh Wikipedia,9000,1575,0,2,0
+kaz_news,Kazakh News Corpus,6000,3834,0,103,98
+engime,Engime educational pages,4500,1323,1201,1,1
+news_summary,News Summary documents,6000,2928,108,0,0
+TOTAL,Total,25500,9660,1309,106,99

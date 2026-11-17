@@ -1,0 +1,9 @@
+Selection,Manual label,Recorded pairs
+flagged_union,changed_version,3
+flagged_union,partial_overlap,2
+flagged_union,repeated_body,27
+flagged_union,shared_template_only,1
+nearest_unflagged,changed_version,7
+nearest_unflagged,partial_overlap,13
+nearest_unflagged,shared_template_only,19
+nearest_unflagged,unrelated,1

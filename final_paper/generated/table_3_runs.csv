@@ -1,0 +1,13 @@
+source_key,Collection,Seed,Post-exact,Character flags,Word flags
+wikipedia_kk,Kazakh Wikipedia,20261105,537,0,0
+wikipedia_kk,Kazakh Wikipedia,20261106,645,2,0
+wikipedia_kk,Kazakh Wikipedia,20261107,393,0,0
+kaz_news,Kazakh News Corpus,20261105,1292,41,37
+kaz_news,Kazakh News Corpus,20261106,1226,1,1
+kaz_news,Kazakh News Corpus,20261107,1316,61,60
+engime,Engime educational pages,20261105,500,0,0
+engime,Engime educational pages,20261106,334,0,0
+engime,Engime educational pages,20261107,489,1,1
+news_summary,News Summary documents,20261105,890,0,0
+news_summary,News Summary documents,20261106,945,0,0
+news_summary,News Summary documents,20261107,1093,0,0

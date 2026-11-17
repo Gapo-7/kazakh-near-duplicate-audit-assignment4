@@ -139,9 +139,15 @@ def main() -> None:
     parser.add_argument("--audit", type=Path, default=ROOT / "results" / "Appendix_B_Audit_Cases.csv")
     parser.add_argument("--candidates", type=Path, default=ROOT / "results" / "audit_candidates.json")
     parser.add_argument("--summary", type=Path, default=ROOT / "results" / "summary.json")
+    parser.add_argument("--protocol", type=Path, default=ROOT / "config" / "frozen_protocol.json")
     parser.add_argument("--out-dir", type=Path, default=ROOT / "final_paper" / "generated")
     args = parser.parse_args()
     data = json.loads(args.results.read_text(encoding="utf-8"))
+    protocol = json.loads(args.protocol.read_text(encoding="utf-8"))
+    assert data["protocol_selection_sha256"] == protocol["selection_sha256"]
+    for source in protocol["corpora"]:
+        blocks = [start for run in source["runs"] for start in run["block_starts"]]
+        assert len(blocks) == len(set(blocks)), f"Overlapping sample blocks: {source['key']}"
     runs = data["results"]
     assert len(runs) == 12
     by_source: dict[str, list[dict]] = defaultdict(list)

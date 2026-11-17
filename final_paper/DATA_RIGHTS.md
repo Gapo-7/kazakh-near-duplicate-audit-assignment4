@@ -11,8 +11,9 @@ may be revised later.
 | [Engime](https://huggingface.co/datasets/nyuuzyou/engime) | CC0 1.0 is stated on the dataset card. | Link to the source; do not bundle page text because this analysis needs only the metadata and result logs. |
 | [Kazakh news summarization documents](https://huggingface.co/datasets/shayekh/kazakh-news-summarization-20k-adapted) | No licence statement was visible on the dataset card at this check. | Link to the source; do not redistribute document text. |
 
-The repository's MIT `LICENSE` applies to code and project-authored material.
-It does not grant rights to the four upstream text collections. The public
+The repository's MIT `LICENSE` covers its software. The manuscript remains
+copyright of its named authors, subject to any later publication terms. The
+MIT licence does not grant rights to the four upstream text collections. The public
 results contain counts, scores, source URLs and short titles. Downloaded text
 and the side-by-side local review page remain outside the repository. Anyone
 rerunning the study obtains source records from their original repositories and

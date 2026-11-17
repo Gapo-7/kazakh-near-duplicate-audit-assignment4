@@ -12,3 +12,7 @@ __pycache__/
 *.pyc
 *.tmp
 results/audit_review_local.html
+final_paper/rebuilt/
+final_paper/verification_run/
+reproduction_cache/
+reproduction_results/

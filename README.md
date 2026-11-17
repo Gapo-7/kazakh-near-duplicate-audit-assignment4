@@ -68,6 +68,10 @@ rebuilding every numerical Results table and figure from the released logs.
 candidate metadata and writes Table 2, Table 3, threshold and review-count
 CSVs. It does not independently verify human labels.
 
+The `final` release also contains the course manuscript and appendices in
+`final_paper/submission/`. See `final_paper/RELEASE_NOTES.md` for the scope of
+that snapshot and the checks still pending.
+
 ## Integrity and privacy
 
 Every number in the report should be traceable to `results/final_results.json` or `results/summary.json`. Keep raw downloaded text, any local review copies and Moodle evidence out of the public repository. Do not include passwords, tokens or personal data in commits. A `LICENSE` file and a tagged `assignment-4` release are required before final submission.
